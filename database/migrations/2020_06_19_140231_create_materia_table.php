@@ -15,10 +15,10 @@ class CreateMateriaTable extends Migration
     {
         Schema::create('materia', function (Blueprint $table) {
             $table->id();
-            $table->string('materia');
+            $table->string('nombre');
             $table->timestamps();
         });
-        
+
     }
 
     /**
