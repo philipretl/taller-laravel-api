@@ -11,7 +11,7 @@
 
 
 
-## Acerca del taller de Laravel APi
+## Acerca del taller de Laravel API
 
 Es una iniciativa desde Venou Dev para permitir socializar y compartir conocimiento con la comunidad.
 
