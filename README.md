@@ -17,6 +17,10 @@ Es una iniciativa desde Venou Dev para permitir socializar y compartir conocimie
 
 Presentación https://drive.google.com/file/d/1P7CSJSNBe_x9P57Kl_6lW1TcMn2lQJPB/view?usp=sharing
 
+## Enlace video.
+
+https://www.youtube.com/watch?v=0Bssy3Zaafs&feature=youtu.be
+
 ## Lista de Reproducción 
 
 Videos Relacionados al taller y tips de Laravel.
