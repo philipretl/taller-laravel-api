@@ -17,6 +17,8 @@ class CreateInstitucionTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('codigo');
+            $table->string('cuenta_bancaria')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -14,11 +14,13 @@ class InstitucionModel extends Model
 
     protected $table='institucion';
     protected $fillable=[ // campos para asignacion masiva
-      'name',
+      'nombre',
+
     ];
 
     protected $guarded= [ // campos para proteger
       'codigo',
+      'cuenta_bancaria',
     ];
 
     public function rector(){

@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class InstitucionController extends Controller
+class DocenteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -68,7 +69,7 @@ class InstitucionController extends Controller
      */
     public function update(Request $request, $id)
     {
-      
+        //
     }
 
     /**
