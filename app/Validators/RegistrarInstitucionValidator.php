@@ -4,7 +4,6 @@ namespace App\Validators;
 
 use Illuminate\Support\Facades\Validator;
 use Venoudev\Results\Exceptions\CheckDataException;
-use App\Exceptions\InstitucionException;
 
 class RegistrarInstitucionValidator
 {
@@ -15,8 +14,7 @@ class RegistrarInstitucionValidator
         ]);
 
         if ($validator->fails()) {
-            //$exception = new CheckDataException();
-            $exception = new InstitucionException();
+            $exception = new CheckDataException();
             $exception->addFieldErrors($validator->errors());
             throw $exception;
         }

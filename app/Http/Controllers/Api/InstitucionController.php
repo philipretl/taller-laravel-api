@@ -86,14 +86,7 @@ class InstitucionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $institucion = $this->institucionService->actualizarInstitucion($request);
-
-        $this->result->success();
-        $this->result->setDescription('Institucion actualizada correctamente');
-        $this->result->addMessage('UPDATED','Model actualizada');
-        $this->result->addDatum('institucion', InstitucionResource::make($institucion));
-
-        return $this->result->getJsonResponse();
+      // To Do
     }
 
     /**
