@@ -5,6 +5,9 @@ namespace App\Exceptions;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
+use Venoudev\Results\Exceptions\CheckDataException;
+use App\Exceptions\InstitucionException;
+
 class Handler extends ExceptionHandler
 {
     /**
@@ -50,6 +53,14 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+
+        if($exception instanceof CheckDataException){
+            return $exception->getJsonResponse();
+        }
+
+        if($exception instanceof InstitucionException){
+            return $exception->getJsonResponse();
+        }
         return parent::render($request, $exception);
     }
 }

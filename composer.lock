@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "ba91cae2059d715ea0c71f55a30ab580",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3645,6 +3645,64 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2019-10-24T08:53:34+00:00"
+        },
+        {
+            "name": "venoudev/results",
+            "version": "0.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/venoudev/results.git",
+                "reference": "4591259f20a5f874ae2389950b3203b89c24844a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/venoudev/results/zipball/4591259f20a5f874ae2389950b3203b89c24844a",
+                "reference": "4591259f20a5f874ae2389950b3203b89c24844a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^7.0",
+                "illuminate/http": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Venoudev\\Results\\Providers\\ResultsServiceProvider"
+                    ],
+                    "aliases": {
+                        "ResultManager": "Venoudev\\Results\\Facades\\ResultManagerFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Venoudev\\Results\\": "src/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "philipretl",
+                    "email": "philipretl@gmail.com"
+                },
+                {
+                    "name": "Nestor Mata",
+                    "email": "nestor@profesional.co.cr"
+                }
+            ],
+            "description": "An awesome package for construct a very understandable Json structure response in your Laravel or Lumen proyect for your API Rest.",
+            "time": "2020-07-10T04:18:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

@@ -1,4 +1,5 @@
 <?php
+use App\Providers\SourcesProvider;
 
 return [
 
@@ -80,7 +81,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE', 'en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -174,6 +175,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /**
+        * Custom Providers
+        */
+
+        App\Providers\SourcesServiceProvider::class,
 
     ],
 
